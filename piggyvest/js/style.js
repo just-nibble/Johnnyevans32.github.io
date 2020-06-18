@@ -43,4 +43,40 @@ function calc(){
 		}
 		
 	}	
+
+	
+}
+function file(){
+    var result = document.getElementById("result"); 
+    result.href = 'data:attachment/text,' + encodeURI(textToSave);
+    result.target = '__blank';
+    result.download = 'myresult.txt';
+    result.click();
+}
+function calc1(){
+	var amount,period,plan,time,formula
+
+	var amount = document.getElementById("amount").value;
+ 
+	var period = document.getElementById("period").value;
+
+	if (amount==="" || period===""){
+		text = "Fill in all fields Please!!";
+	}else{
+		var plan = document.getElementById('plan').value;
+
+		if (plan  === 'Daily') {
+			let time = 30;
+			text =  "You will need to save " + amount/(time * period) + " NAIRA " + plan + " for the next " + period + " Months!";
+		} 
+		if (plan  === 'Weekly') {
+			let time = 4.28571429;
+			text=  "You will need to save " + amount/(time * period) + " NAIRA " + plan + " for the next " + period + " Months!";
+		}
+		if (plan  === 'Monthly') {
+			let time = 1;
+			text =  "You will need to save " + amount/(time * period) + " NAIRA " + plan + " for the next " + period + " Months!";
+		}	
+	}
+	document.getElementById('result').innerHTML = text	
 }
