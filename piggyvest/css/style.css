@@ -5,4 +5,13 @@
 }
 textarea{
 	width: 100%;
-S
+
+}
+
+#share-buttons img {
+	width: 10px;
+	padding: 5px;
+	border: 0;
+	box-shadow: 0;
+	display: inline;
+}
