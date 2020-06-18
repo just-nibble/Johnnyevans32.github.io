@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Piggyvest Interest Calculator</title>
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="Piggyvest Interest Calculator Made By Johnny Evans from team fierce">
+    <meta property="og:image" content="image/3.jpg">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="all,follow">
+    <!-- Bootstrap CSS-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Font Awesome CSS-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <!-- Google fonts - Popppins for copy-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,800">
+    <!-- orion icons-->
+    <link rel="stylesheet" href="css/orionicons.css">
+    <!-- theme stylesheet-->
+    <link rel="stylesheet" href="css/style.default.css" id="theme-stylesheet">
+    <!-- Custom stylesheet - for your changes-->
+    <link rel="stylesheet" href="css/custom.css">
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="image/piggyvest.svg">
+    <!-- Tweaks for older IEs--><!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+  </head>
+  <body>
+    <!-- navbar-->
+    <header class="header">
+      <nav class="py-2 bg-white shadow" style="padding-bottom: 0px;background: #FFEFBA;background: -webkit-linear-gradient(to right, #FFFFFF, #FFEFBA);background: linear-gradient(to right, #FFFFFF, #FFEFBA);">
+        <div class="container text-center">
+          <div class="row">
+            <div class="col">
+              <a href="index.html" >
+                <img src="image/piggyvest.svg" style="width: 50%;height: 50%;">
+              </a>
+            </div>
+          </div>  
+        </div>
+      </nav>
+    </header>
+    <div class="d-flex align-items-stretch" style="background: #24C6DC;background: -webkit-linear-gradient(to right, #514A9D, #24C6DC);background: linear-gradient(to right, #514A9D, #24C6DC);">
+      <div class="page-holder w-100 d-flex flex-wrap">
+        <div class="container-fluid px-xl-5">
+          <section class="py-5">
+            <div class="row">
+              
+              <!-- Form Elements -->
+              <div class="col-lg-12 mb-5">
+                <div class="card" style="background: #FFEFBA;background: -webkit-linear-gradient(to right, #FFFFFF, #FFEFBA);background: linear-gradient(to right, #FFFFFF, #FFEFBA);">
+                  <div class="card-header" style="background: #005C97;background: -webkit-linear-gradient(to right, #363795, #005C97);background: linear-gradient(to right, #363795, #005C97);">
+                    <h3 class="h6 text-uppercase mb-0 text-center text-white">Piggyvest Interest Rate Calculator</h3>
+                  </div>
+                  <div class="card-body">
+                    <form class="form-horizontal">
+
+                      <div class="form-group row">
+                        <label class="col-md-3 form-control-label"><h5 class="h6 text-uppercase mb-0">Principal Amount</h5></label>
+                        <div class="col-md-9">
+                          <div class="form-group">
+                            <div class="input-group mb-3">
+                              <div class="input-group-prepend">
+                                <span class="input-group-text">Naira</span>
+                              </div>
+                              <input type="number" id="amount" aria-label="Amount (to the nearest dollar)" class="form-control" required="">
+                              <div class="input-group-append"><span class="input-group-text">.00</span></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                     
+                      <div class="form-group row">
+                        <label class="col-md-3 form-control-label"><h5 class="h6 text-uppercase mb-0 ">Piggyvest Plan</h5></label>
+                        <div class="col-md-9 select mb-3">
+                          <select name="account" id="plan" class="form-control" required="">
+                            <option value="Piggybank">PIGGYBANK</option>
+                            <option value="Safelock">SafeLock</option>
+                            <option value="Target">Target</option>
+                            <option value="Flex">Flex</option>
+                            <option value="Flex_Dollar">Flex Dollar</option>
+                            <option value="Investify">INVESTIFY</option>
+                          </select>
+                        </div>
+                      </div>
+
+                       <div class="form-group row">
+                        <label class="col-md-3 form-control-label"><h5 class="h6 text-uppercase mb-0 ">Period</h5></label>
+                        <div class="col-md-9">
+                          <select name="account" id="period" class="form-control" required="">
+                            <option value="3">3 YEARS</option>
+                            <option value="2">2 YEARS</option>
+                            <option value="1">1 YEAR</option>
+                            <option value="0.5">6 MONTHS</option>
+                            <option value="0.25">3 MONTHS</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                        <button type="button" onclick="calc()" data-toggle="modal" data-target="#myModal" class="btn btn-primary btn-lg" style="width: 100%;">Calculate</button>
+                        <div id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" class="modal fade text-left">
+                          <div role="document" class="modal-dialog">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <img src="image/piggyvest.svg" style="width: 10%;height: 10%;">
+                                <h4 id="exampleModalLabel" class="modal-title text-center">Results</h4>
+                                <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">×</span></button>
+                              </div>
+                              <div class="modal-body text-dark">
+                                <div class="form-group position-relative mb-0">
+                                  <h5 class='h6 text-uppercase mb-0 text-center'>
+                                    <span id="result"></span>
+                                  </h5>
+                                </div>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" data-dismiss="modal" class="btn btn-secondary">Close</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <footer class="footer bg-white shadow align-self-end py-3 px-xl-5 w-100"  style="background: #005C97;background: -webkit-linear-gradient(to right, #363795, #005C97);background: linear-gradient(to right, #363795, #005C97);">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12 mb-5">
+                <h3 class="h6 text-uppercase mb-0 text-white text-center">CODED BY @Johnny Evans HNGi7</h3>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+    <!-- JavaScript files-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.js/umd/popper.min.js"> </script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/style.js"></script>
+  </body>
+</html>
