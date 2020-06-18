@@ -29,6 +29,55 @@
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
   </head>
   <body>
+    <script type="text/javascript">
+      function calc(){
+        
+        let money= document.getElementById('amount').value;
+        
+        if (money === "") {
+          document.getElementById('result').innerHTML = "Enter the amount you wish to invest/save!! ";
+        }else{
+          let amount = parseInt(money)
+
+          let time = parseInt(document.getElementById('period').value);
+
+          let plan = document.getElementById('plan').value;
+
+          let text = "Your interest amount is ";
+
+          let currency = " NAIRA After ";
+
+          let month = "Months"
+
+          if (plan  === 'Piggybank') {
+            let interest = 10;
+            document.getElementById('result').innerHTML = text + round((amount *  time * interest)/100) + currency + (time * 12) + month;
+          }
+          if (plan  === 'Safelock') {
+            let interest = 15.5;
+            document.getElementById('result').innerHTML = text +  round((amount *  time * interest)/100)  + currency + (time * 12) + month;
+          }
+          if (plan  === 'Target') {
+            let interest = 10;
+            document.getElementById('result').innerHTML = text +  round((amount *  time * interest)/100) + currency + (time * 12) + month;
+          }
+          if (plan  === 'Flex') {
+            let interest = 10;
+            document.getElementById('result').innerHTML = text + round((amount *  time * interest)/100) + currency + (time * 12) + month;
+          }
+          if (plan  === 'Flex_Dollar') {
+            let interest = 6;
+            document.getElementById('result').innerHTML = text + (round((amount *  time * interest)/100) + currency + (time * 12) + month;
+          }
+          if (plan  === 'Investify') {
+            let interest = 25;
+            document.getElementById('result').innerHTML = text + round((amount *  time * interest)/100) + currency + (time * 12) + month;
+          }
+          
+        } 
+      }
+
+    </script>
     <!-- navbar-->
     <header class="header">
       <nav class="navbar navbar-expand-lg px-4 py-2 bg-white shadow" >
@@ -71,7 +120,6 @@
                     <h3 class="h6 text-uppercase mb-0 text-center">Calculate Your Interest Amount</h3>
                   </div>
                   <div class="card-body">
-                    <form class="form-horizontal">
 
                       <div class="form-group row">
                         <label class="col-md-3 form-control-label"><h5 class="h6 text-uppercase mb-0">Principal Amount</h5></label>
@@ -81,7 +129,7 @@
                               <div class="input-group-prepend">
                                 <span class="input-group-text">Naira</span>
                               </div>
-                              <input type="number" id="amount" aria-label="Amount (to the nearest dollar)" class="form-control" required="">
+                              <input type="number" id="amount" aria-label="Amount (to the nearest dollar)" class="form-control">
                               <div class="input-group-append"><span class="input-group-text">.00</span></div>
                             </div>
                           </div>
@@ -105,7 +153,7 @@
                        <div class="form-group row">
                         <label class="col-md-3 form-control-label"><h5 class="h6 text-uppercase mb-0 ">Period</h5></label>
                         <div class="col-md-9">
-                          <select name="account" id="period" class="form-control" required="">
+                          <select name="account" id="period" class="form-control">
                             <option value="3">3 YEARS</option>
                             <option value="2">2 YEARS</option>
                             <option value="1">1 YEAR</option>
@@ -164,7 +212,6 @@
                           </div>
                         </div>
                       </div>
-                    </form>
                   </div>
                 </div>
               </div>
@@ -183,11 +230,11 @@
       </div>
     </div>
     <!-- JavaScript files--> 
-   <script src="js/style.js"></script>
 
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.js/umd/popper.min.js"> </script>
     <script src="js/bootstrap.min.js"></script>
-     <script src="js/front.js"></script>
+    <script src="js/front.js"></script>
+    <script type="text/javascript" src="js/style.js"></script>
   </body>
 </html>
