@@ -72,3 +72,14 @@ function calc1(){
 	}
 	document.getElementById('result').innerHTML = text	
 }
+
+function printDiv() { 
+	var divContents = document.getElementById("result").innerHTML; 
+	var a = window.open('', '', 'height=3000, width=3000'); 
+	a.document.write('<html>'); 
+	a.document.write('<body >'); 
+	a.document.write(divContents); 
+	a.document.write('</body></html>'); 
+	a.document.close(); 
+	a.print(); 
+} 
