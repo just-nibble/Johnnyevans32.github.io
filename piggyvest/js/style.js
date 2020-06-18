@@ -44,3 +44,13 @@ function calc(){
 		
 	}	
 }
+
+
+function file(){
+    var result = document.getElementsByClassName("result");
+    
+    result.href = 'data:attachment/text,' + encodeURI(textToSave);
+    result.target = '__blank';
+    result.download = 'myresult.txt';
+    result.click();
+}
