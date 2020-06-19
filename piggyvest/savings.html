@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Piggyvest Interest Calculator</title>
     <meta property="og:type" content="website">
-    <meta property="og:description" content="Piggyvest Interest Calculator Made By Johnny Evans from team fierce">
+    <meta property="og:description" content="Piggyvest Interest and Savings Calculator Made By @Johnny Evans from team fierce and @Princewill from team granite">
     <meta property="og:image" content="image/3.jpg">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,7 +15,8 @@
     <!-- Font Awesome CSS-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <!-- Google fonts - Popppins for copy-->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,800">
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round|Muli:200,400,800|Poppins|Lato|Playfair+Display" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fredoka+One&amp;display=swap" rel="stylesheet">
     <!-- orion icons-->
     <link rel="stylesheet" href="css/orionicons.css">
     <!-- theme stylesheet-->
@@ -23,7 +24,7 @@
     <!-- Custom stylesheet - for your changes-->
     <link rel="stylesheet" href="css/custom.css">
     <!-- Favicon-->
-    <link rel="shortcut icon" href="image/download.png">
+    <link rel="shortcut icon" href="image/piggybank-logo.png">
     <!-- Tweaks for older IEs--><!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
@@ -33,9 +34,9 @@
     <header class="header">
       <nav class="navbar navbar-expand-lg px-4 py-2 bg-white shadow" >
         <a href="#" class="sidebar-toggler text-gray-500 mr-4 mr-lg-5 lead">
-          <i class="fas fa-align-left" style="color: blue"></i>
+          <i class="fas fa-align-left" style="color: #144499;"></i>
         </a>
-        <a href="index.html" >
+        <a href="https://www.piggyvest.com/" >
           <img src="image/piggyvest.svg" style="width: 10rem;height: 3rem;">
         </a>
       </nav>
@@ -43,11 +44,11 @@
 
     <div class="d-flex align-items-stretch" >
       <div id="sidebar" class="sidebar py-3">
-        <div class="text-gray-400 text-uppercase px-2 px-lg-4 py-3 font-weight-bold small headings-font-family">FAQ</div>
+        <div class="text-gray-400 text-uppercase px-2 px-lg-4 py-3 font-weight-bold small headings-font-family"><h5>FAQ</h5></div>
         <ul class="sidebar-menu list-unstyled">
           <li class="sidebar-list-item">
-            <a href="savings.html" class="sidebar-link text-muted active">
-              <i class="fas fa-calculator mr-3 text-gray"></i>
+            <a href="savings.html" class="sidebar-link text-white" style="background-color: #144499;">
+              <i class="fas fa-calculator mr-3 text-white"></i>
               <span>Savings Calculator</span>
             </a>
           </li>
@@ -68,116 +69,123 @@
               <div class="col-lg-12 mb-5">
                 <div class="card" >
                   <div class="card-header">
-                    <h3 class="h6 text-uppercase mb-0 text-center">Calculate Your Future Savings</h3>
+                    <h3 class="h3 mb-0 text-center" style="color: #144499;">Calculate Your Future Savings</h3>
                   </div>
                   <div class="card-body">
-
-                      <div class="form-group row">
-                        <label class="col-md-3 form-control-label"><h5 class="h6 text-uppercase mb-0">Desired Savings Amount</h5></label>
-                        <div class="col-md-9">
-                          <div class="form-group">
-                            <div class="input-group mb-3">
-                              <div class="input-group-prepend">
-                                <span class="input-group-text">Naira</span>
-                              </div>
-                              <input type="number" id="amount" aria-label="Amount (to the nearest dollar)" class="form-control">
-                              <div class="input-group-append"><span class="input-group-text">.00</span></div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                     
-                      <div class="form-group row">
-                        <label class="col-md-3 form-control-label"><h5 class="h6 text-uppercase mb-0 ">Savings Plan</h5></label>
-                        <div class="col-md-9 select mb-3">
-                          <select id="plan" class="form-control">
-                            <option value="Monthly">Monthly</option>
-                            <option value="Weekly">Weekly</option>
-                            <option value="Daily">Daily</option>
-                          </select>
-                        </div>
-                      </div>
-
-                       <div class="form-group row">
-                        <label class="col-md-3 form-control-label"><h5 class="h6 text-uppercase mb-0 ">When The amount is needed</h5></label>
-                        <div class="col-md-9">
+                    <div class="form-group row">
+                      <label class="col-md-3 form-control-label"><h5 class="h6 text-uppercase mb-0"style="color: #144499;">Target Amount To Save</h5></label>
+                      <div class="col-md-9">
+                        <div class="form-group">
                           <div class="input-group mb-3">
                             <div class="input-group-prepend">
-                              <span class="input-group-text">In</span>
+                              <span class="input-group-text text-white" style="background-color: #144499;">Naira</span>
                             </div>
-                            <input type="number" id="period" aria-label="Amount (to the nearest month)" class="form-control">
+                            <input type="number" id="amount" aria-label="Amount (to the nearest dollar)" class="form-control">
                             <div class="input-group-append">
-                              <span class="input-group-text">Months Time</span>
+                              <span class="input-group-text text-white" style="background-color: #144499;">.00</span>
                             </div>
                           </div>
                         </div>
                       </div>
-                      <div class="form-group" style="text-align: center;">
-                        <button onclick="calc1()" data-toggle="modal" data-target="#myModal" class="btn " style="background-color: blue;text-align: center;"><h4>Calculate</h4></button>
-                        <div id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" class="modal fade text-left">
-                          <div role="document" class="modal-dialog">
-                            <div class="modal-content">
-                              <div class="modal-header">
-                                <img src="image/piggyvest.svg" style="width: 10%;height: 10%;">
-                                <h4 id="exampleModalLabel" class="modal-title text-center">Results</h4>
-                                <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">×</span></button>
+                    </div>
+                   
+                    <div class="form-group row">
+                      <label class="col-md-3 form-control-label"><h5 class="h6 text-uppercase mb-0 "style="color: #144499;">Savings Plan</h5></label>
+                      <div class="col-md-9 select mb-3">
+                        <select id="plan" class="form-control text-white" style="background-color: #144499;">
+                          <option value="Monthly">Monthly</option>
+                          <option value="Weekly">Weekly</option>
+                          <option value="Daily">Daily</option>
+                        </select>
+                      </div>
+                    </div>
+
+                     <div class="form-group row">
+                      <label class="col-md-3 form-control-label"><h5 class="h6 text-uppercase mb-0 "style="color: #144499;">When the Target amount is needed</h5></label>
+                      <div class="col-md-9">
+                        <div class="input-group mb-3">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text text-white" style="background-color: #144499;">In</span>
+                          </div>
+                          <input type="number" id="period" aria-label="Amount (to the nearest month)" class="form-control">
+                          <div class="input-group-append">
+                            <span class="input-group-text text-white" style="background-color: #144499;">Months Time</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group" style="text-align: center;">
+                      <button onclick="calc1()" data-toggle="modal" data-target="#myModal" class="btn " style="background-color: #144499;text-align: center;"><h4>Calculate</h4></button>
+                      <div id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" class="modal fade text-left">
+                        <div role="document" class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <img src="image/piggyvest.svg" style="width: 10%;height: 10%;">
+                              <h4 id="exampleModalLabel" class="modal-title text-center" style="color: #144499">Results</h4>
+                              <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">×</span></button>
+                            </div>
+                            <div class="modal-body text-dark">
+                              <div class="form-group position-relative mb-0">
+                                <h5 class='h6 text-uppercase mb-0 text-center'>
+                                  <span id="result"></span>
+                                </h5>
                               </div>
-                              <div class="modal-body text-dark">
-                                <div class="form-group position-relative mb-0">
-                                  <h5 class='h6 text-uppercase mb-0 text-center'>
-                                    <span id="result"></span>
-                                  </h5>
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" data-dismiss="modal" class="btn btn-secondary">Close</button>
+                              <button type="button" onclick="printDiv()" id="print"  data-dismiss="modal" class="btn btn-success">Export Report</button>
+                              <div class="accordion" id="accordionExample">
+                                <div class="card">
+                                  <button class="btn" id="headingOne" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    <i class="fas fa-share-alt" title="share result" style="color: blue"></i>
+                                  </button>
+                                  <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                    <a href="mailto:?Subject=Simple Share Buttons&amp;Body=I%20saw%20this%20and%20thought%20of%20you!%20 https://johnnyevans32.github.io/piggyvest/">
+                                      <img width="30" height="30" src="https://simplesharebuttons.com/images/somacro/email.png" alt="Email" />
+                                    </a>
+                                    <a href="http://www.facebook.com/sharer.php?u=https://johnnyevans32.github.io/piggyvest/" target="_blank">
+                                      <img width="30" height="30" src="https://simplesharebuttons.com/images/somacro/facebook.png" alt="Facebook" />
+                                    </a>
+                                    <a href="https://plus.google.com/share?url=https://johnnyevans32.github.io/piggyvest/" target="_blank">
+                                      <img width="30" height="30" src="https://simplesharebuttons.com/images/somacro/google.png" alt="Google" />
+                                    </a>
+                                    <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=https://johnnyevans32.github.io/piggyvest/" target="_blank">
+                                      <img width="30" height="30" src="https://simplesharebuttons.com/images/somacro/linkedin.png" alt="LinkedIn" />
+                                    </a>
+                                    <a href="https://twitter.com/share?url=https://johnnyevans32.github.io/piggyvest/&amp;text=Simple%20Share%20Buttons&amp;hashtags=piggyvest" target="_blank">
+                                      <img width="30" height="30" src="https://simplesharebuttons.com/images/somacro/twitter.png" alt="Twitter" />
+                                    </a>
+                                  </div>
                                 </div>
                               </div>
-                              <div class="modal-footer">
-                                <button type="button" data-dismiss="modal" class="btn btn-secondary">Close</button>
-                                <button type="button" onclick="printDiv()" id="print"  data-dismiss="modal" class="btn btn-success">Download Result</button>
-                                <button class="btn"><i class="fas fa-share-alt" title="share result" style="color: blue"></i></button>
-                              </div>
                             </div>
                           </div>
                         </div>
-                      </div><br>
-                      <div class="form-group">
-                        <div class="container-fluid text-center">
-                          <h1 class="h3 mb-0 text-center">Over ₦1,000,000,000 securely saved every month.</h1><br>
-                          <p class="h6 mb-0 text-center">
-                            PiggyVest uses bank-level security measures to keep your data safe.<br>PiggyVest users save &amp; invest well over a billion every single month, and they are just getting started.
-                          </p><br>
-                          <a href="https://www.piggyvest.com/register">
-                            <button class="btn" style="background-color: blue">Create Account for Free</button>
-                          </a><br><br>
-                          <div class="container">
-                            <div class="row">
-                              <div class="col">
-                                <a href="https://www.piggyvest.com/appstorelink/ios" target="_blank">
-                                  <img style="width: 60%;height: 60%;text-align: right;" src="https://www.piggyvest.com//images/iosbadge-101-image.png" class="download app_store_badges">
-                                </a>
-                              </div>
-                              <div class="col">
-                                <a href="https://www.piggyvest.com/appstorelink/android" target="_blank">
-                                  <img style="width: 60%;height: 60%; text-align: left;" src="https://www.piggyvest.com//images/google-play-badge.png" class="download app_store_badges">
-                                </a>
-                              </div>
-                            </div>
-                          </div>       
-                        </div>
                       </div>
+                    </div><br>
+                    <div class="form-group">
+                      <div class="container text-center" style="width: 90%;font-size: 12px;margin: 0 auto;max-width: 1310px;padding: 40px 0;box-sizing: border-box;">
+                        <h1 class="h2 mb-0 text-center" style="color: #144499">Over ₦1,000,000,000 securely saved every month.</h1><br>
+                        <p class="h6 mb-1 text-center" style="color: gray">
+                          PiggyVest uses bank-level security measures to keep your data safe.<br>PiggyVest users save &amp; invest well over a billion every single month, and they are just getting started.
+                        </p><br>
+                        <a href="https://www.piggyvest.com/register">
+                          <button class="btn btn-lg" style="border-radius: 5px; background-color: #144499">Create Account for Free</button>
+                        </a><br><br>
+                        <a href="https://www.piggyvest.com/appstorelink/ios" target="_blank">
+                          <img style="width: 8rem;height: 3rem;margin-top: 50px;margin: 0;padding: 0;border: 0;font-size: 100%;font: inherit;vertical-align: baseline;" src="https://www.piggyvest.com//images/iosbadge-101-image.png" class="download app_store_badges">
+                        </a>
+                        <a href="https://www.piggyvest.com/appstorelink/android" target="_blank">
+                          <img style="width: 8rem;height: 3rem;margin-top: 50px;margin: 0;padding: 0;border: 0;font-size: 100%;font: inherit;vertical-align: baseline;" src="https://www.piggyvest.com//images/google-play-badge.png" class="download app_store_badges">
+                        </a>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </section>
         </div>
-        <footer class="footer bg-white shadow align-self-end py-3 px-xl-5 w-100">
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-12 mb-5">
-                <h3 class="h6 text-uppercase mb-0 text-center">CODED BY @Johnny Evans and @Princewill HNGi7</h3>
-              </div>
-            </div>
-          </div>
-        </footer>
       </div>
     </div>
     <!-- JavaScript files-->   
