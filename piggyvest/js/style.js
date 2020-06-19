@@ -11,35 +11,35 @@ function calc(){
 
 		let plan = document.getElementById('plan').value;
 
-		let text = "Your interest amount is ";
+		let text = "Your interest amount will be ";
 
 		let currency = " NAIRA After ";
 
-		let month = "Months"
+		let month = "Months <br> Your Total balance will be "
 
 		if (plan  === 'Piggybank') {
 			let interest = 10;
-			document.getElementById('result').innerHTML = text + Math.round((amount *  time * interest)/100) + currency + (time * 12) + month;
+			document.getElementById('result').innerHTML = text + Math.round((amount *  time * interest)/100) + currency + (time * 12) + month + Math.round(((amount *  time * interest)/100) + amount) + " naira.";
 		}
 		if (plan  === 'Safelock') {
 			let interest = 15.5;
-			document.getElementById('result').innerHTML = text +  Math.round((amount *  time * interest)/100)  + currency + (time * 12) + month;
+			document.getElementById('result').innerHTML = text + Math.round((amount *  time * interest)/100) + currency + (time * 12) + month + Math.round(((amount *  time * interest)/100) + amount) + " naira.";
 		}
 		if (plan  === 'Target') {
 			let interest = 10;
-			document.getElementById('result').innerHTML = text +  Math.round((amount *  time * interest)/100) + currency + (time * 12) + month;
+			document.getElementById('result').innerHTML = text + Math.round((amount *  time * interest)/100) + currency + (time * 12) + month + Math.round(((amount *  time * interest)/100) + amount) + " naira.";
 		}
 		if (plan  === 'Flex') {
 			let interest = 10;
-			document.getElementById('result').innerHTML = text + Math.round((amount *  time * interest)/100) + currency + (time * 12) + month;
+			document.getElementById('result').innerHTML = text + Math.round((amount *  time * interest)/100) + currency + (time * 12) + month + Math.round(((amount *  time * interest)/100) + amount) + " naira.";
 		}
 		if (plan  === 'Flex_Dollar') {
 			let interest = 6;
-			document.getElementById('result').innerHTML = text + Math.round((amount *  time * interest)/100) + currency + (time * 12) + month;
+			document.getElementById('result').innerHTML = text + Math.round((amount *  time * interest)/100) + currency + (time * 12) + month + Math.round(((amount *  time * interest)/100) + amount) + " naira.";
 		}
 		if (plan  === 'Investify') {
 			let interest = 25;
-			document.getElementById('result').innerHTML = text + Math.round((amount *  time * interest)/100) + currency + (time * 12) + month;
+			document.getElementById('result').innerHTML = text + Math.round((amount *  time * interest)/100) + currency + (time * 12) + month + Math.round(((amount *  time * interest)/100) + amount) + " naira.";
 		}
 		
 	}	
