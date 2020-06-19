@@ -35,7 +35,7 @@
     <header class="header">
       <nav class="navbar navbar-expand-lg px-4 py-2 bg-white shadow" >
         <a href="#" class="sidebar-toggler text-gray-500 mr-4 mr-lg-5 lead">
-          <i class="fas fa-align-left" style="color: blue"></i>
+          <i class="fas fa-align-left" style="color:#144499;"></i>
         </a>
         <a href="https://www.piggyvest.com/" >
           <img src="image/piggyvest.svg" style="width: 10rem;height: 3rem;">
@@ -45,7 +45,7 @@
 
     <div class="d-flex align-items-stretch" >
       <div id="sidebar" class="sidebar py-3">
-        <div class="text-gray-400 text-uppercase px-2 px-lg-4 py-3 font-weight-bold small headings-font-family">FAQ</div>
+        <div class="text-gray-400 text-uppercase px-2 px-lg-4 py-3 font-weight-bold small headings-font-family"><h5>FAQ</h5></div>
         <ul class="sidebar-menu list-unstyled">
           <li class="sidebar-list-item">
             <a href="savings.html" class="sidebar-link text-muted">
@@ -54,8 +54,8 @@
             </a>
           </li>
           <li class="sidebar-list-item">
-            <a href="index.html" class="sidebar-link text-muted active">
-              <i class="fas fa-calculator mr-3 text-gray"></i>
+            <a href="index.html" class="sidebar-link text-white" style="background-color: #144499;">
+              <i class="fas fa-calculator mr-3 text-white"></i>
               <span>Interest Calculator</span>
             </a>
           </li>
@@ -75,24 +75,26 @@
                   <div class="card-body">
 
                       <div class="form-group row">
-                        <label class="col-md-3 form-control-label"><h5 class="h6 text-uppercase mb-0">Amount to Lock</h5></label>
+                        <label class="col-md-3 form-control-label"><h5 class="h6 text-uppercase mb-0"style="color: #144499;" >Amount to Lock</h5></label>
                         <div class="col-md-9">
                           <div class="form-group">
                             <div class="input-group mb-3">
                               <div class="input-group-prepend">
-                                <span class="input-group-text">Naira</span>
+                                <span class="input-group-text text-white" style="background-color: #144499;">Naira</span>
                               </div>
                               <input type="number" id="amount" aria-label="Amount (to the nearest dollar)" class="form-control">
-                              <div class="input-group-append"><span class="input-group-text">.00</span></div>
+                              <div class="input-group-append">
+                                <span class="input-group-text text-white" style="background-color: #144499;">.00</span>
+                              </div>
                             </div>
                           </div>
                         </div>
                       </div>
                      
                       <div class="form-group row">
-                        <label class="col-md-3 form-control-label"><h5 class="h6 text-uppercase mb-0 ">Piggyvest Plan</h5></label>
+                        <label class="col-md-3 form-control-label"><h5 class="h6 text-uppercase mb-0 "style="color: #144499;">Piggyvest Plan</h5></label>
                         <div class="col-md-9 select mb-3">
-                          <select id="plan" class="form-control">
+                          <select id="plan" class="form-control text-white" style="background-color: #144499;">
                             <option value="Piggybank">PIGGYBANK</option>
                             <option value="Safelock">SafeLock</option>
                             <option value="Target">Target</option>
@@ -104,9 +106,9 @@
                       </div>
 
                        <div class="form-group row">
-                        <label class="col-md-3 form-control-label"><h5 class="h6 text-uppercase mb-0 ">Duration of Lock</h5></label>
+                        <label class="col-md-3 form-control-label"><h5 class="h6 text-uppercase mb-0 "style="color: #144499;">Duration of Lock</h5></label>
                         <div class="col-md-9">
-                          <select name="account" id="period" class="form-control">
+                          <select name="account" id="period" class="form-control text-white" style="background-color: #144499;">
                             <option value="3">3 YEARS</option>
                             <option value="2">2 YEARS</option>
                             <option value="1">1 YEAR</option>
@@ -116,7 +118,7 @@
                         </div>
                       </div>
                       <div class="form-group" style="text-align: center;">
-                        <button onclick="calc()" data-toggle="modal" data-target="#myModal" class="btn " style="background-color: #144499;text-align: center;"><h5>Calculate</h5></button>
+                        <button onclick="calc()" data-toggle="modal" data-target="#myModal" class="btn " style="background-color: #144499;text-align: center;"><h4>Calculate</h4></button>
                         <div id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" class="modal fade text-left">
                           <div role="document" class="modal-dialog">
                             <div class="modal-content">
