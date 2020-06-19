@@ -7,7 +7,7 @@ function calc(){
 	}else{
 		let amount = parseInt(money)
 
-		let time = parseInt(document.getElementById('period').value);
+		let time = document.getElementById('period').value;
 
 		let plan = document.getElementById('plan').value;
 
