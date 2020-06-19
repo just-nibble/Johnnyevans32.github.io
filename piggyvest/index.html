@@ -70,12 +70,12 @@
               <div class="col-lg-12 mb-5">
                 <div class="card" >
                   <div class="card-header">
-                    <h3 class="h5 mb-0 text-center" style="color: #144499;">Calculate Your Interest Amount</h3>
+                    <h3 class="h3 mb-0 text-center" style="color: #144499;">Calculate Your Interest Amount</h3>
                   </div>
                   <div class="card-body">
 
                       <div class="form-group row">
-                        <label class="col-md-3 form-control-label"><h5 class="h6 text-uppercase mb-0">Principal Amount</h5></label>
+                        <label class="col-md-3 form-control-label"><h5 class="h6 text-uppercase mb-0">Amount to Lock</h5></label>
                         <div class="col-md-9">
                           <div class="form-group">
                             <div class="input-group mb-3">
@@ -104,7 +104,7 @@
                       </div>
 
                        <div class="form-group row">
-                        <label class="col-md-3 form-control-label"><h5 class="h6 text-uppercase mb-0 ">Period</h5></label>
+                        <label class="col-md-3 form-control-label"><h5 class="h6 text-uppercase mb-0 ">Duration of Lock</h5></label>
                         <div class="col-md-9">
                           <select name="account" id="period" class="form-control">
                             <option value="3">3 YEARS</option>
@@ -134,24 +134,31 @@
                               </div>
                               <div class="modal-footer">
                                 <button type="button" data-dismiss="modal" class="btn btn-secondary">Close</button>
-                                <button type="button" onclick="printDiv()" id="print" data-dismiss="modal" class="btn btn-success">Download Result</button>
-                                <button class="btn"><i class="fas fa-share-alt" title="share result" style="color: blue"></i></button>
-                                <div id="share-buttons">
-                                  <a href="mailto:?Subject=Simple Share Buttons&amp;Body=I%20saw%20this%20and%20thought%20of%20you!%20 https://johnnyevans32.github.io/piggyvest/">
-                                      <img width="30" height="30" src="https://simplesharebuttons.com/images/somacro/email.png" alt="Email" />
-                                  </a>
-                                  <a href="http://www.facebook.com/sharer.php?u=https://johnnyevans32.github.io/piggyvest/" target="_blank">
-                                      <img width="30" height="30" src="https://simplesharebuttons.com/images/somacro/facebook.png" alt="Facebook" />
-                                  </a>
-                                  <a href="https://plus.google.com/share?url=https://johnnyevans32.github.io/piggyvest/" target="_blank">
-                                      <img width="30" height="30" src="https://simplesharebuttons.com/images/somacro/google.png" alt="Google" />
-                                  </a>
-                                  <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=https://johnnyevans32.github.io/piggyvest/" target="_blank">
-                                      <img width="30" height="30" src="https://simplesharebuttons.com/images/somacro/linkedin.png" alt="LinkedIn" />
-                                  </a>
-                                  <a href="https://twitter.com/share?url=https://johnnyevans32.github.io/piggyvest/&amp;text=Simple%20Share%20Buttons&amp;hashtags=piggyvest" target="_blank">
-                                      <img width="30" height="30" src="https://simplesharebuttons.com/images/somacro/twitter.png" alt="Twitter" />
-                                  </a>
+                                <button type="button" onclick="printDiv()" id="print" data-dismiss="modal" class="btn btn-success">Export Report</button>
+                                
+                                <div class="accordion" id="accordionExample">
+                                  <div class="card">
+                                    <button class="btn" id="headingOne" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                      <i class="fas fa-share-alt" title="share result" style="color: blue"></i>
+                                    </button>
+                                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                      <a href="mailto:?Subject=Simple Share Buttons&amp;Body=I%20saw%20this%20and%20thought%20of%20you!%20 https://johnnyevans32.github.io/piggyvest/">
+                                        <img width="30" height="30" src="https://simplesharebuttons.com/images/somacro/email.png" alt="Email" />
+                                      </a>
+                                      <a href="http://www.facebook.com/sharer.php?u=https://johnnyevans32.github.io/piggyvest/" target="_blank">
+                                        <img width="30" height="30" src="https://simplesharebuttons.com/images/somacro/facebook.png" alt="Facebook" />
+                                      </a>
+                                      <a href="https://plus.google.com/share?url=https://johnnyevans32.github.io/piggyvest/" target="_blank">
+                                        <img width="30" height="30" src="https://simplesharebuttons.com/images/somacro/google.png" alt="Google" />
+                                      </a>
+                                      <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=https://johnnyevans32.github.io/piggyvest/" target="_blank">
+                                        <img width="30" height="30" src="https://simplesharebuttons.com/images/somacro/linkedin.png" alt="LinkedIn" />
+                                      </a>
+                                      <a href="https://twitter.com/share?url=https://johnnyevans32.github.io/piggyvest/&amp;text=Simple%20Share%20Buttons&amp;hashtags=piggyvest" target="_blank">
+                                        <img width="30" height="30" src="https://simplesharebuttons.com/images/somacro/twitter.png" alt="Twitter" />
+                                      </a>
+                                    </div>
+                                  </div>
                                 </div>
                               </div>
                             </div>
